@@ -8,15 +8,15 @@
     (1). 实例化一个`CoreServer`（`from core.api.tlv import CoreServer, CoreUdpServer`）
     (2). 启动其他内容并初始化**grpc api**
 
-2. 实例化`CoreServer`
+2. 实例化[CoreServer](./api.md#coreserver.py)
     (1). 实例化`CoreEmu`(`from core.emulator import coreemu`)
     (2). 读取配置项
     (3). 配置服务器连接（**没看懂**）
-3. 实例化`CoreEmu`
+3. 实例化[CoreEmu](./emulator.md#coreemu.py)
     (1). 修改权限，
     (2). 读取配置项
     (3). 创建**session**列表
-    (4). 加载服务
+    (4). 加载服务(import 和验证可行性/检查可执行文件)
     (5). 配置服务，目前看来主要是初始化了一些后面配置服务所需要的类和参数。
     (6). 检查可执行文件
     (7). 监听关闭指令。
@@ -101,8 +101,6 @@ core-pygui --level LEVEL
 
 
 ## 程序
-
-
 
 
 
